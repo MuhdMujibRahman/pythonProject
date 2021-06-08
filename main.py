@@ -6,7 +6,8 @@ def encode(list_of_string):
     print(encoded_txt)
 
 def decode(encoded_string):
-    list_of_string = re.findall('([A-Z][a-z]+)', encoded_string[0])
+    list_of_string = re.findall('([A-Z][a-z]+|[A-Z])', encoded_string[0])
+    print(list_of_string)
     dencoded_txt = ' '.join(list_of_string).capitalize()
     print(dencoded_txt)
 
